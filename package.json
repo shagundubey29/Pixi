@@ -1,0 +1,19 @@
+{
+  "name": "pixy",
+  "version": "1.0.0",
+  "description": "This is an ecommerce site",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Shagun Dubey <1202shagun@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "parcel": "^2.6.0",
+    "sass": "^1.52.3"
+  }
+}
