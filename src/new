@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border : 2px solid red;
+}
+.wrap{
+  position : relative;
+  display:flex;
+  justify-content : center;
+  align-items : center;
+  flex-flow : row wrap;
+}
+
+.upper{
+  flex-basis : 100%;
+}
+.inner{
+  flex-basis : 100%;
+}
+.down{
+  flex-basis : 100%;
+}
+.inner > ul{
+  display : flex;
+  justify-content : space-between;
+  align-items : center;
+  flex-flow : row wrap;
+}
+.inner > ul > li{
+  list-style : none;
+  line-height:60px;
+  text-align : center;
+  flex-basis : 49%
+}
+.down > ul{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  flex-flow : row wrap;
+  gap:2%;
+}
