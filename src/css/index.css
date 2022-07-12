@@ -105,6 +105,7 @@ nav #social {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 #hero .front {
   grid-column: 2/7;
@@ -271,31 +272,61 @@ nav #social {
           box-shadow: 0 0px 10px 10px #F4E2DE;
 }
 
-.call {
-  background-color: yellow;
+#services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-bottom: 2rem;
+  gap: 2%;
+}
+#services .card {
+  -webkit-box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
+  padding: 1em;
+  text-align: center;
+}
+#services .card img {
+  display: block;
+  width: 200px;
+  height: 180px;
+}
+#services .card h5 {
+  display: inline;
+  font-size: 1em;
+  border-radius: 15px;
+  line-height: 20px;
+  padding: 4px 20px;
+  background-color: white;
 }
 
-#best-seller {
+#best-seller, #shop {
   position: relative;
-  margin-top: 2rem;
-  margin-left: 7rem;
-  margin-right: 7rem;
-  background-color: #DDD8D7;
+  background-color: #F4E2DE;
 }
-#best-seller h4 {
+#best-seller h4, #shop h4 {
   text-transform: uppercase;
   text-align: center;
   font-size: 1em;
   margin-bottom: 1rem;
   padding-top: 1rem;
 }
-#best-seller hr {
+#best-seller hr, #shop hr {
   margin: 0 auto;
   width: 60%;
   border-top: 1px solid rgb(0, 0, 0);
-  background-color: #DDD8D7;
+  background-color: #807C7C;
 }
-#best-seller .grid {
+#best-seller .grid, #shop .grid {
   max-height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 200px);
@@ -308,12 +339,56 @@ nav #social {
           align-items: center;
   gap: 3rem;
 }
-#best-seller .grid .best1, #best-seller .grid .best2, #best-seller .grid .best3 {
+#best-seller .grid .best, #shop .grid .best {
   margin-top: 2rem;
   margin-bottom: 2rem;
   grid-column: span 1;
 }
-#best-seller .grid .best1 .img, #best-seller .grid .best2 .img, #best-seller .grid .best3 .img {
+#best-seller .grid .best .img, #shop .grid .best .img {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 2px rgba(136, 136, 136, 0.8);
+          box-shadow: 0 0 5px 2px rgba(136, 136, 136, 0.8);
+}
+
+#shop {
+  background-color: #DDD8D7;
+}
+#shop h4 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+#shop hr {
+  margin: 0 auto;
+  width: 60%;
+  border-top: 1px solid rgb(0, 0, 0);
+  background-color: #A3857F;
+}
+#shop .shopping {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(3, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+#shop .shopping .best {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  grid-column: span 1;
+}
+#shop .shopping .best .img {
   width: 100%;
   height: 200px;
   background-position: center;
